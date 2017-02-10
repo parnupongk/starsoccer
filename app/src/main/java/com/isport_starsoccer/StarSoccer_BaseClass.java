@@ -175,7 +175,11 @@ public class StarSoccer_BaseClass extends Activity {
                         }
                     });
                     main_adView.loadAd(adRequest);
-                } /* else if (ads == 2) {
+                } else {
+                    setAdsIsport();
+                }
+
+                /* else if (ads == 2) {
                     main_layout_webview.setVisibility(View.GONE);
                     main_layout_adview.setVisibility(View.VISIBLE);
 
@@ -190,11 +194,7 @@ public class StarSoccer_BaseClass extends Activity {
                         }
                     });
                     main_adView_isp.loadAd(adRequest);
-                } */ else {
-                    setAdsIsport();
-                }
-
-
+                } */
             } else {
                 setAdsIsport();
             }
