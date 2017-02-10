@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_template"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tranparency">
+
+    <RelativeLayout
+        android:id="@+id/main_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/main_layout_center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/main_layout_top" />
+
+    <RelativeLayout
+        android:id="@+id/main_layout_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/main_frmlayout_adview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/tranparency">
+
+            <LinearLayout
+                android:id="@+id/main_layout_adview"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@color/tranparency"
+                android:orientation="vertical">
+
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/main_adView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-4647231216668761/6347143335" />
+
+
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/main_adView_isp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-2796964969269378/4433243049" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_layout_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:background="@color/tranparency"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_layout_close"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:paddingBottom="40dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:id="@+id/main_img_close"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/icon_close" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

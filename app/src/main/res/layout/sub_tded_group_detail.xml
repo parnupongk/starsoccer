@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:padding="10dp"
+  android:background="@drawable/bg_txt_detail">
+  
+    <TextView
+  			android:id="@+id/sub_tded_detail_desc"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:gravity="left"
+  			style="@style/TextBackTded"
+  		/>
+    
+  	<ImageView
+  	    	android:id="@+id/sub_tded_detail_ok"
+  	    	android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:layout_gravity="center"
+  			android:src="@drawable/btn_freel"
+  			android:layout_marginTop="5dp"
+  			android:layout_marginBottom="5dp"
+  	    />
+  	    <TextView
+  			android:id="@+id/sub_tded_detail_promotion"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:gravity="left"
+  			android:layout_marginLeft="10dp"
+  			style="@style/TextBackPromotion"
+  		/>
+    
+    <TextView
+  			android:id="@+id/sub_tded_detail_price"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:gravity="left"
+  			android:layout_marginLeft="10dp"
+  			android:layout_marginTop="10dp"
+  			style="@style/TextBackTdedprice"
+  		/>
+  	<TextView
+  	    	android:id="@+id/sub_tded_detail_cancel"
+  	    	android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:gravity="left"
+  			android:layout_marginLeft="10dp"
+  			style="@style/TextBackTdedprice"
+  	    />
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  >
+  <ImageView
+  	android:id="@+id/sub_clip_hilight"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  />
+  <RelativeLayout
+  	android:id="@+id/sub_clip_layout_data"
+	android:layout_width="fill_parent"
+ 	android:layout_height="wrap_content"
+  >
+	  <FrameLayout
+	  	android:id="@+id/sub_clip_frame"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  >
+		  <ImageView
+		  	android:id="@+id/sub_clip_image"
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  />
+		  <ProgressBar
+		  	android:id="@+id/sub_clip_progress"
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  />
+	  </FrameLayout>
+	
+	  <LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:orientation="vertical"
+	  	android:layout_toRightOf="@+id/sub_clip_frame"
+	  >
+		  <TextView
+		  	android:id="@+id/sub_clip_text_title"
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	style="@style/TextBackBold"
+		  />
+		  
+		  <TextView
+		  	android:id="@+id/sub_clip_text_detail"
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:maxLines="3"
+		  	android:ellipsize="end"
+		  	style="@style/TextBack"
+		  />
+	  </LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

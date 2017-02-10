@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/bg"
+  >
+  
+    <RelativeLayout 
+        android:id="@+id/activity_layout_sub"
+        android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_marginTop="20dp"
+  		android:layout_marginLeft="10dp"
+        >
+		  <TextView
+		  		android:id="@+id/active_txt_header"
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		style="@style/TextBackBold"
+		  		android:layout_marginBottom="5dp"
+		  	/>
+		  
+		  <TextView
+		  		android:id="@+id/active_txt_detail"
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_below="@+id/active_txt_header"
+		  		style="@style/TextBack"
+		  		android:layout_marginBottom="5dp"
+		  	/>
+		  		  <TextView
+		  		android:id="@+id/active_txt_footer"
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_below="@+id/active_txt_detail"
+		  		style="@style/TextBackTdedprice"
+		  		android:layout_marginBottom="5dp"
+		  		android:visibility="gone"
+		  	/>
+		  		  
+		  <EditText
+		  		android:id="@+id/active_txt_mobile"
+		  		android:inputType="number"
+		  		android:maxLength="10"
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_below="@+id/active_txt_footer"
+		  		style="@style/TextBack"
+		  		android:layout_marginBottom="5dp"
+		  		android:layout_marginRight="10dp"
+		  	/>
+		  
+		  <Button
+		      	android:id="@+id/active_submit"
+		      	android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		android:layout_below="@+id/active_txt_mobile"
+				android:layout_marginTop="20dp"
+				android:layout_marginBottom="5dp"
+		  		android:layout_centerHorizontal="true"
+		  		android:background="@drawable/btn_confirm"
+		      />
+
+	</RelativeLayout>
+	<LinearLayout 
+	    android:id="@+id/active_layout_ivr"
+	    		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:orientation="vertical"
+		  		android:layout_below="@+id/activity_layout_sub"
+		  		  		android:layout_marginTop="20dp"
+  		android:layout_marginLeft="10dp"
+  		android:layout_marginRight="10dp"
+	    >
+	    		  <!--  TextView
+		  		android:id="@+id/active_txt_ivr_header"
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		style="@style/TextBackBold"
+		  		android:text="หรือ"
+		  		android:layout_marginBottom="5dp"
+		  	/>
+	    		  		  <TextView
+		  		android:id="@+id/active_txt_ivr_detail"
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_below="@+id/active_txt_header"
+		  		style="@style/TextBack"
+		  		android:text="สมัครบริการกด"
+		  		android:layout_marginBottom="5dp"
+		  	/>
+	    		                  <TextView
+                    android:id="@+id/activity_btn_call"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button__background"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/phone_button"
+                    android:textColor="@android:color/black"
+
+                    android:textStyle="bold" />
+	    		                  
+	    		                  		  <Button
+		      	android:id="@+id/active_ivr_submit"
+		      	android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+		  		android:layout_gravity="center_horizontal"
+		  		android:background="@drawable/btn_regis_down"
+		      /-->
+	    		                  		  
+	    			  <TextView
+		  		android:id="@+id/active_txt_footer1"
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		style="@style/TextBackTdedprice"
+		  		android:layout_marginBottom="10dp"
+		  	/>	                  		  
+	    
+	</LinearLayout>
+  
+</RelativeLayout>

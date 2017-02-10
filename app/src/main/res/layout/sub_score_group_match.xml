@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/bg_match"
+  android:layout_marginLeft="10dp">
+  
+    <LinearLayout 
+        android:id="@+id/list_result_layout"
+        android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal"
+  		android:layout_marginLeft="5dp"
+  		android:layout_marginRight="5dp">
+        
+  		<TextView
+  			android:id="@+id/list_result_status"
+  			android:layout_width="wrap_content"
+  			android:layout_height="fill_parent"
+  			android:textColor="#000000"
+  			android:gravity="center"
+  			android:singleLine="true"
+  		/>
+  	
+  		<TextView
+  			android:id="@+id/list_result_team1"
+  			android:layout_width="wrap_content"
+  			android:layout_height="fill_parent"
+  			android:textColor="#000000"
+  			android:gravity="center"
+  			android:singleLine="true"
+  		/>
+  		
+  		<TextView
+  			android:id="@+id/list_result_result_ft"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:textColor="#000000"
+  		/>
+
+  		<TextView
+  			android:id="@+id/list_result_team2"
+  			android:layout_width="wrap_content"
+  			android:layout_height="fill_parent"
+  			android:gravity="center"
+  			android:textColor="#000000"
+  			android:singleLine="true"
+  		/>
+  		
+  		<TextView
+  			android:id="@+id/list_result_result_ht"
+  			android:layout_width="wrap_content"
+  			android:layout_height="fill_parent"
+  			android:gravity="center"
+  			android:textColor="#000000"
+  			android:singleLine="true"
+  		/>
+  		
+  		</LinearLayout>
+  		
+  		<LinearLayout 
+      android:id="@+id/list_result_line"
+      android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_marginLeft="5dp"
+	  android:layout_marginRight="5dp"
+	  android:layout_marginTop="0dp"
+	  android:layout_marginBottom="0dp"
+	  android:layout_below="@+id/list_result_layout">
+	      <ImageView 
+	          android:id="@+id/list_result_line_img"
+	          android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content"
+		  	android:src="@drawable/line"/>
+  </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:gravity="top"
+    android:background="@drawable/bg"
+    android:layout_gravity="center_vertical"
+    >
+   <LinearLayout 
+      android:id="@+id/sub_menu_layout_menu"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true">
+      
+      <ImageView
+  		android:id="@+id/sub_menu_img_menu"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:background="@drawable/header_menu"
+  		android:layout_gravity="top"
+  		/>
+      
+  </LinearLayout>
+  <RelativeLayout
+      android:id="@+id/sub_menu_layout_clip"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/sub_menu_layout_menu"
+      >
+      <ImageView
+  		android:id="@+id/sub_menu_img_clip"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:background="@drawable/btn_footballthai"
+  		android:layout_gravity="top"
+  		android:layout_alignParentRight="true"
+  		/>
+  </RelativeLayout>
+  
+	<RelativeLayout
+      android:id="@+id/sub_menu_layout"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:padding="10dp"
+      android:gravity="center_vertical|center_horizontal"
+      android:layout_below="@+id/sub_menu_layout_clip"
+      >
+      	<ImageView
+        android:id="@+id/btnLiveSocre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@+id/btnResult"        
+        android:src="@drawable/livescore_th" />
+      
+      	
+      	<ImageView
+        android:id="@+id/btnResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+        android:src="@drawable/result" />
+      	
+      	
+      	<ImageView
+        android:id="@+id/btnNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/news"
+        android:layout_toRightOf="@+id/btnResult" />
+	    
+        
+        <ImageView
+        android:id="@+id/btnProgram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/btnLiveSocre"
+        android:layout_toLeftOf="@+id/btnanalyse"
+        android:src="@drawable/program" />
+        
+        <ImageView
+        android:id="@+id/btnanalyse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+       	android:layout_below ="@+id/btnResult"
+       	android:src="@drawable/analyse" />
+            
+        <ImageView
+        android:id="@+id/btnTded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin ="10dp"
+        android:layout_toRightOf="@+id/btnanalyse"
+       	android:layout_below="@+id/btnNews"
+       	android:src="@drawable/tded"/>
+        
+       	<ImageView
+        android:id="@+id/btnLeagueTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin ="10dp"
+        android:layout_toLeftOf="@+id/btnHot"
+       	android:layout_below="@+id/btnProgram"
+       	android:src="@drawable/table"/>
+    
+    	<ImageView
+        android:id="@+id/btnHot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+       	android:layout_below ="@+id/btnanalyse"
+       	android:src="@drawable/hot" />
+    	
+    	<ImageView
+        android:id="@+id/btnSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+       	android:layout_below ="@+id/btnTded"
+       	android:layout_toRightOf="@+id/btnHot"
+       	android:src="@drawable/setting" />
+
+</RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

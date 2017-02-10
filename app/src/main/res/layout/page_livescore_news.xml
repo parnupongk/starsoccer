@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/page_news_main_layout"
+        >
+
+        <RelativeLayout
+            android:id="@+id/page_lsnews_layout_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal"
+            >
+
+
+            <ImageView
+                android:id="@+id/page_lsnews_image_livescore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="top"
+                android:background="@drawable/btn_menu" />
+
+            <ImageView
+                android:id="@+id/page_lsnews_image_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_toRightOf="@+id/page_lsnews_image_livescore"
+                android:background="@drawable/header_livescore" />
+
+            <TextView
+                android:id="@+id/page_lsnews_header_text"
+                style="@style/CustomTextWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/page_lsnews_image_header"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/page_lsnews_message"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/page_lsnews_layout_menu" />
+
+        <ExpandableListView
+            android:id="@+id/page_lsnews_list_livescore"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/page_lsnews_layout_menu"
+            android:groupIndicator="@drawable/play_expand_background"
+            android:listSelector="@drawable/play_expand_seletor"
+            android:scrollbars="none"></ExpandableListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/page_news_main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/page_lsnews_layout_news"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/page_lsnews_img_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="top"
+                android:background="@drawable/btn_news" />
+
+            <ImageView
+                android:id="@+id/page_lsnews_image_news"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/page_lsnews_img_news"
+                android:background="@drawable/header_news" />
+
+        </RelativeLayout>
+
+
+        <Gallery
+            android:id="@+id/page_lsnews_list_news"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/page_lsnews_layout_news"
+            android:background="@android:color/black"
+            android:padding="2sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

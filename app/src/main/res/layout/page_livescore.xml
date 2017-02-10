@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/bg"
+  >
+
+	<LinearLayout
+	    	android:id="@+id/page_ls_layout_livescore"
+  			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"
+   			android:gravity="top"
+   			android:orientation="vertical">
+		  
+	    <RelativeLayout 
+	        android:id="@+id/page_ls_layout_menu"
+	        android:layout_width="fill_parent"
+   			android:layout_height="wrap_content" 
+   			android:orientation="horizontal" >
+   			
+   			
+			    <ImageView
+		  		android:id="@+id/page_ls_image_livescore"
+		  		android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		android:background="@drawable/btn_menu"
+		  		android:layout_alignParentLeft="true"
+		  		android:layout_gravity="top"
+		  		/>
+			    
+			    <ImageView
+		  		android:id="@+id/page_ls_image_header"
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:background="@drawable/header_livescore"
+		  		android:layout_toRightOf="@+id/page_ls_image_livescore"
+		  		android:layout_gravity="top"
+		  		/>
+			    
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+		 >
+			    <ImageView
+		 		    android:id="@+id/page_ls_img"
+		 		    android:layout_width="wrap_content"
+		 		    android:layout_height="wrap_content"
+		 		    android:layout_alignParentLeft="true"
+		 		    android:src="@drawable/hd_sub_ball" />
+			    
+		 		<TextView
+		 		    android:id="@+id/page_ls_txt_date"
+		 		    android:layout_width="wrap_content" 
+		 		    android:layout_height="wrap_content"
+		 		    android:layout_toRightOf="@+id/page_ls_img"
+		 		    style="@style/TextBack"
+		 		    />
+		 		
+		 		<ImageView
+		 		    android:id="@+id/page_ls_btn_result"
+		 		    android:layout_width="wrap_content"
+		 		    android:layout_height="wrap_content"
+		 		    android:layout_alignParentRight="true"
+		 		    android:src="@drawable/btn_result" />
+	     </RelativeLayout>
+	    
+
+	    <TextView
+  		android:id="@+id/page_ls_message"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+		style="@style/CustomText"
+  	/>
+		<ExpandableListView
+	        android:id="@+id/page_ls_list_livescore"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:groupIndicator="@drawable/play_expand_background"
+	        android:listSelector="@drawable/play_expand_seletor"
+	        android:scrollbars="none" >
+    	</ExpandableListView>
+		  
+  	</LinearLayout>
+  	
+</RelativeLayout>

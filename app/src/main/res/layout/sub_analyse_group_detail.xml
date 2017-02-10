@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:paddingLeft="10dp"
+  android:paddingTop="10dp"
+  android:background="@drawable/bg_txt_detail">
+  
+    <TextView
+  			android:id="@+id/sub_analyse_detail_header"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:gravity="left"
+  			style="@style/TextBackAnalyse"
+  		/>
+    
+    <TextView
+  			android:id="@+id/sub_analyse_detail_detail"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:gravity="left"
+  			android:layout_marginTop="10dp"
+  			android:layout_marginLeft="10dp"
+  			style="@style/TextBack"
+  		/>
+  		
+</LinearLayout>

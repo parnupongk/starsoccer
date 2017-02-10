@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="@android:color/black"
+  >
+  
+  <ImageView
+  	android:id="@+id/header_button_home"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_alignParentLeft="true"
+  	android:layout_centerVertical="true"
+  />
+  
+  <ImageView
+  	android:id="@+id/header_button_logo_starsoccer"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerInParent="true"
+  />
+  
+  <ImageView
+      android:id="@+id/header_button_logo_3gx"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_toLeftOf="@+id/header_button_info"
+      android:minHeight="40dp"
+      android:minWidth="100dp" />
+  
+  <ImageView
+  	android:id="@+id/header_button_info"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_toLeftOf="@+id/header_button_clip"
+  	android:layout_centerVertical="true"
+  />
+  
+    <ImageView
+  	android:id="@+id/header_button_clip"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_alignParentRight="true"
+  	android:layout_centerVertical="true"
+  />
+</RelativeLayout>

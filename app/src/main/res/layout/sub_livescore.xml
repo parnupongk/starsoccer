@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_match"
+    
+    
+     >
+     	  
+    <RelativeLayout
+        android:id="@+id/sub_livescore_layout_match"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="@drawable/bg_match">
+
+        <RelativeLayout 
+           	android:id="@+id/sub_livescore_layout_match1"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent" >
+        
+        <TextView
+            android:id="@+id/sub_livescore_txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+        <LinearLayout
+            android:id="@+id/sub_livescore_layout_status"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/sub_livescore_txt_time" >
+
+            <ImageView
+                android:id="@+id/sub_livescore_img_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sub_livescore_txt_team1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sub_livescore_layout_status" />
+
+        <TextView
+            android:id="@+id/sub_livescore_txt_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/sub_livescore_txt_team1" />
+
+        <TextView
+            android:id="@+id/sub_livescore_txt_team2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+        
+        </RelativeLayout>
+        
+         <LinearLayout 
+		      android:id="@+id/sub_livescore_line"
+		      android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_marginLeft="5dp"
+			  android:layout_marginRight="5dp"
+			  android:layout_marginTop="0dp"
+			  android:layout_marginBottom="0dp"
+			  android:layout_below="@+id/sub_livescore_layout_match1">
+			      <ImageView 
+			          	android:id="@+id/sub_livescore_line_img"
+			          	android:layout_width="fill_parent"
+				  		android:layout_height="wrap_content"
+				  		android:src="@drawable/line"/>
+      	</LinearLayout>
+    </RelativeLayout>
+
+     
+  
+  
+</RelativeLayout>

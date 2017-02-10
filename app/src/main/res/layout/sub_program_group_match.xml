@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/bg_match"
+    android:layout_marginLeft="20dp">
+  
+    <RelativeLayout 
+        android:id="@+id/sub_program_layout"
+        android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal"
+  		android:layout_marginLeft="5dp"
+  		android:layout_marginRight="5dp">
+        
+  		<TextView
+  			android:id="@+id/sub_program_team1"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:layout_alignParentLeft="true"
+  			android:layout_centerVertical="true"
+  			android:layout_centerHorizontal="true"
+  			style="@style/TextBack"
+  		/>
+  		
+  		<RelativeLayout
+  			android:orientation="vertical"
+  			android:id="@+id/sub_program_layout_time"
+  			android:layout_width="wrap_content"
+  			android:layout_height="fill_parent"
+  			android:layout_centerInParent="true"
+  		>
+	  		<TextView
+	  			android:id="@+id/sub_program_time"
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_centerVertical="true"
+  				style="@style/TextBack"
+	  		/>
+	  		
+	  		<TextView
+	  			android:id="@+id/sub_program_channel"
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+  				style="@style/TextBack"
+  				android:layout_below="@+id/sub_program_time"
+  				android:layout_marginTop="10dp"
+	  		/>
+  		</RelativeLayout>
+  		
+
+  		<TextView
+  			android:id="@+id/sub_program_team2"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:singleLine="true"
+  			android:layout_centerVertical="true"
+ 			android:layout_centerHorizontal="true"
+ 			style="@style/TextBack"
+ 			android:layout_toLeftOf="@+id/sub_program_img_detail"
+  		/>
+  	
+  		<ImageView
+  			android:id="@+id/sub_program_img_detail"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:layout_centerVertical="true"
+ 			android:layout_centerHorizontal="true"
+ 			android:layout_alignParentRight="true"
+  		/>
+
+  		
+  </RelativeLayout>
+  <LinearLayout 
+      android:id="@+id/sub_program_line"
+      android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_marginLeft="5dp"
+	  android:layout_marginRight="5dp"
+	  android:layout_marginTop="0dp"
+	  android:layout_marginBottom="0dp"
+	  android:layout_below="@+id/sub_program_layout">
+      <ImageView 
+          android:id="@+id/sub_program_line_img"
+          android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:src="@drawable/line"/>
+  </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.isport_starsoccer">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <permission
+        android:name="com.isport_starsoccer.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.isport_starsoccer.permission.C2D_MESSAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".StarSoccer_Logo"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <category android:name="android.intent.category.BROWSABLE"></category>
+
+                <data
+                    android:host="isport.com"
+                    android:pathPrefix="/myapp"
+                    android:scheme="http"></data>
+            </intent-filter>
+        </activity>
+        <activity android:name=".StarSoccer_Active"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".StarSoccer_BaseClass"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="StarSoccer_Menu"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="StarSoccer_ScoreDetail"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"></activity>
+        <activity
+            android:name="StarSoccer_Main"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="StarSoccer_News"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="StarSoccer_NewsDetail"
+            android:theme="@android:style/Theme.Translucent"></activity>
+        <activity
+            android:name="StarSoccer_LiveScore"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="StarSoccer_ScoreResult"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="StarSoccer_Program"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="StarSoccer_MatchAnalyse"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="StarSoccer_LeagueTable"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="StarSoccer_MenuLeague"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"></activity>
+        <activity
+            android:name="StarSoccer_Clip"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="StarSoccer_ClipDetail"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"></activity>
+        <activity
+            android:name="StarSoccer_Tded"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="StarSoccer_Hot"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="StarSoccer_Setting"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".service.facebook"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="StarSoccer_Event"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"></activity>
+        <activity
+            android:name="StarSoccer_MatchAnalyseDetail"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"></activity>
+        <activity
+            android:name="StarSoccer_ProgramAnalyseDetail"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"></activity>
+        <activity
+            android:name="StarSoccer_Twitter"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN">
+                    <category android:name="android.intent.category.LAUNCHER"></category>
+                    <intent-filter>
+                        <action android:name="android.intent.action.VIEW">
+                            <category android:name="android.intent.category.DEFAULT">
+                                <category android:name="android.intent.category.BROWSABLE">
+                                    <data
+                                        android:host="callback"
+                                        android:scheme="x-oauthflow-twitter"></data>
+                                </category>
+                            </category>
+                        </action>
+                    </intent-filter>
+                </action>
+            </intent-filter>
+        </activity>
+
+        <!-- FB -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider234540040014586"
+            android:exported="true" />
+
+        <!-- admob -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <!--  GCM  -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.isport_starsoccer" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".service.GcmService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.MyInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".service.RegistrationIntentService"
+            android:exported="false"></service>
+    </application>
+
+</manifest>
